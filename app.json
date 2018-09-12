@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/problem/problem",
+    
+    "pages/method/method",
+    "pages/measure/measure",
+    "pages/addid/addid",
+    "pages/test/test",
+    "pages/tests/tests",
+    "pages/scanble/scanble",
+    "pages/record/record",
+    "pages/sphygmomanometer/sphygmomanometer",
+    "pages/binding/binding",
+    "pages/result/result",
+    "pages/list/list",
+    "pages/help/help",
+    "pages/about/about",
+    "pages/explain/explain",
+    
+    "pages/set/set",
+    "pages/conn/conn"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "血压计",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#ffffff",
+    "borderStyle":"white",
+    "selectedColor":"#ffffff",
+    "backgroundColor":"#00af64",
+    "list": [{
+      "selectedIconPath": "images/nav_home.png",
+      "iconPath": "images/home.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "selectedIconPath": "images/nav_sphygmomanometer.png",
+      "iconPath": "images/sphygmomanometer.png",
+      "pagePath": "pages/sphygmomanometer/sphygmomanometer",
+      "text": "血压"
+    }, {
+      "selectedIconPath": "images/nav_set.png",
+      "iconPath": "images/set.png",
+      "pagePath": "pages/set/set",
+      "text": "设置"
+    }]
+  }
+}
