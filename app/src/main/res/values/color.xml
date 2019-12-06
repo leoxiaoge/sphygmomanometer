@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题颜色 -->
+    <color name="theme_color">#38719e</color>
+    <color name="black">#000000</color>
+
+    <!-- guide 相关颜色 -->
+    <color name="guide_input_color">#316189</color>
+    <color name="guide_button_color">#568bb4</color>
+    <color name="guide_text_color">#FFFFFF</color>
+
+
+    <!-- activity 背景颜色 -->
+    <color name="activity_color">#efeff4</color>
+    <!-- 字体颜色 -->
+    <color name="text_color">#232323</color>
+    <!-- hint 字体颜色 -->
+    <color name="hint_txt_color">#c2c5c8</color>
+    <!-- tab 未选中时候的字体颜色 -->
+    <color name="tab_checked_false_txt_color">#a3c0e0</color>
+    <!-- tab 选中后的字体颜色 -->
+    <color name="tab_checked_true_txt_color">#FFFFFF</color>
+    <!-- 分割线颜色 -->
+    <color name="item_divider_color">#cccccc</color>
+    <!-- item 按下的颜色 -->
+    <color name="item_pressed_color">#c8c8c8</color>
+    <!-- 按钮栏未选中状态下字体颜色 -->
+    <color name="buttonbar_check_false_txt_color">#38719e</color>
+    <!-- 按钮栏选中后的字体颜色 -->
+    <color name="buttonbar_check_true_txt_color">#FFFFFF</color>
+    <!-- 对话框按钮按下时的颜色 -->
+    <color name="dialog_button_pressed_color">#ffbadaff</color>
+</resources>

@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.sx.portal.fragment.MeasureRecordFragment">
+
+    <FrameLayout style="@style/title_style">
+
+        <TextView
+            style="@style/title_text_style"
+            android:text="@string/tab_record" />
+
+        <ImageButton
+            android:id="@+id/measure_chart"
+            style="@style/title_bar_button_style"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/ic_measure_chart" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/fm_member_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_layout_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <com.sx.portal.plugin.circleimageview.CircleImageView
+            android:id="@+id/fm_member_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:civ_border_color="@android:color/darker_gray"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fm_member_name"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试用户" />
+
+            <TextView
+                android:id="@+id/fm_member_age"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="测试用户"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/member_list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_list_open" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/item_divider_color" />
+
+    <RadioGroup
+        android:id="@+id/buttonbar_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttonbar_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@drawable/buttonbar_txt_status" />
+
+        <RadioButton
+            android:id="@+id/week"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttonbar_center"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/week"
+            android:textColor="@drawable/buttonbar_txt_status" />
+
+        <RadioButton
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttonbar_center"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@drawable/buttonbar_txt_status" />
+
+        <RadioButton
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttonbar_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@drawable/buttonbar_txt_status" />
+
+    </RadioGroup>
+
+    <com.sx.portal.plugin.stickylistheaders.ExpandableStickyListHeadersListView
+        android:id="@+id/measure_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="true"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideOverlay"
+        android:clickable="false"/>
+
+</LinearLayout>

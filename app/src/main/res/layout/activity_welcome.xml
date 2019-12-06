@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:text="@string/company"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="16dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company_name"
+        android:text="@string/product"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="16dp"
+        android:gravity="center"/>
+
+
+    <ImageView
+        android:id="@+id/waiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@anim/anim_loading"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"/>
+
+</RelativeLayout>

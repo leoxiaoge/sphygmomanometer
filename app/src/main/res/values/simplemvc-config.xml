@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- component ids -->
+    <item name="id_member_dao" type="id" />
+    <item name="id_measure_dao" type="id" />
+</resources>

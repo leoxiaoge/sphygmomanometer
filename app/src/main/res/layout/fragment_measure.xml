@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/theme_color"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:id="@+id/device_conn_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/device_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <include layout="@layout/view_member_content" />
+
+        <LinearLayout
+            android:id="@+id/measuring_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+            <TextView
+                style="@style/text_style"
+                android:id="@+id/measure_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="118sp"
+                android:gravity="center"
+                android:text="000"/>
+
+            <TextView
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="mmHg"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sbp_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SBP"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/measure_tit_txt_size"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dw"
+                    android:layout_below="@+id/sbp_label"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/measure_dw_txt_size"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sbp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/measure_value_txt_size"
+                android:hint="000"
+                android:textColorHint="@color/hint_txt_color"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dbp_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DBP"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/measure_tit_txt_size"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dw"
+                    android:layout_below="@+id/dbp_label"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/measure_dw_txt_size"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dbp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/measure_value_txt_size"
+                android:hint="000"
+                android:textColorHint="@color/hint_txt_color"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/heart_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heart_rate"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/measure_tit_txt_size"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ht_dw"
+                    android:layout_below="@+id/heart_label"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/measure_dw_txt_size"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/heartRate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/measure_value_txt_size"
+                android:hint="000"
+                android:textColorHint="@color/hint_txt_color"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <Button
+            android:id="@+id/start_measure"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            style="@style/button_style"
+            android:text="@string/start_measure"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/measure_note"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

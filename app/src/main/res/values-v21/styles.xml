@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- 主题样式 -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/theme_color</item>
+        <item name="android:colorPrimaryDark">@color/theme_color</item>
+        <item name="android:colorPrimary">@color/theme_color</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowBackground">@color/activity_color</item>
+    </style>
+</resources>

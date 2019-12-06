@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dr_dialog_bg"
+    android:orientation="vertical" >
+
+    <!-- 
+    <TextView
+        android:id="@+id/alarm_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center"
+        android:textSize="@dimen/dialog_title_font_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+	-->
+ 
+    <TextView
+        android:id="@+id/alarm_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/dialog_title_text_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/item_divider_color" />
+
+    <Button
+        android:id="@+id/alarm_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_button_height"
+        android:background="@drawable/dr_dialog_confirmbutton"
+        android:text="@string/ok"
+        android:textSize="@dimen/button_text_size" />
+
+</LinearLayout>

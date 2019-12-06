@@ -1,0 +1,38 @@
+<resources>
+    <dimen name="default_button_txt_size">14sp</dimen>
+    <dimen name="default_input_txt_size">14sp</dimen>
+    <dimen name="default_txt_size">16sp</dimen>
+    <!-- 字体大小 -->
+    <!-- 标题字体大小 -->
+    <dimen name="title_text_size">18sp</dimen>
+    <!-- 文本字体大小 -->
+    <dimen name="text_size">14sp</dimen>
+    <!-- 按钮字体大小 -->
+    <dimen name="button_text_size">14sp</dimen>
+    <!-- 输入框字体大小 -->
+    <dimen name="input_text_size">14sp</dimen>
+    <!-- 导航栏字体大小 -->
+    <dimen name="tab_text_size">12sp</dimen>
+    <!-- 对话框标题字体大小 -->
+    <dimen name="dialog_title_text_size">18sp</dimen>
+    <!-- 对话框内容字体大小 -->
+    <dimen name="dialog_content_text_size">16sp</dimen>
+    <!-- 测量血压标题字体大小 -->
+    <dimen name="measure_tit_txt_size">28sp</dimen>
+    <!-- 测量血压显示结果字体大小 -->
+    <dimen name="measure_value_txt_size">52sp</dimen>
+    <!-- 测量血压单位显示字体大小 -->
+    <dimen name="measure_dw_txt_size">14sp</dimen>
+
+    <!-- 尺寸 -->
+    <!-- 导航栏高度 -->
+    <dimen name="tab_height">48dp</dimen>
+    <!-- 对话框标题栏高度 -->
+    <dimen name="dialog_title_height">48dp</dimen>
+    <!-- 对话框按钮高度 -->
+    <dimen name="dialog_button_height">48dp</dimen>
+    <!-- 对话框圆角 -->
+    <dimen name="dialog_radius">6dp</dimen>
+    <!-- 标题栏高度 -->
+    <dimen name="title_height">48dp</dimen>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+    
+    <TextView 
+        android:id="@+id/sel_menu_itemname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dialog_content_text_size"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/sel_menu_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/text_color"/>
+
+</LinearLayout>

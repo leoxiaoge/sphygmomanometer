@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/theme_color">
+
+    <RadioGroup
+        android:id="@+id/buttonbar_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <RadioButton
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttonbar_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@drawable/buttonbar_txt_status" />
+
+        <RadioButton
+            android:id="@+id/week"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttonbar_center"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/week"
+            android:textColor="@drawable/buttonbar_txt_status" />
+
+        <RadioButton
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttonbar_center"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@drawable/buttonbar_txt_status" />
+
+        <RadioButton
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_buttonbar_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@drawable/buttonbar_txt_status" />
+
+    </RadioGroup>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/measure_chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/time_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style"/>
+</LinearLayout>

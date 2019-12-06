@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sx.portal.MainActivity"
+    android:background="@color/activity_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/tab_group"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:gravity="center_vertical"
+        android:background="@color/theme_color">
+
+        <RadioButton
+            android:id="@+id/tab_measure"
+            style="@style/tab_style"
+            android:text="@string/tab_measure"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_measure_status"/>
+
+        <RadioButton
+            android:id="@+id/tab_record"
+            style="@style/tab_style"
+            android:text="@string/tab_record"
+            android:drawableTop="@drawable/tab_record_status"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/tab_setting"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_my_status"
+            android:text="@string/tab_setting"
+            android:checked="false" />
+    </RadioGroup>
+
+</LinearLayout>

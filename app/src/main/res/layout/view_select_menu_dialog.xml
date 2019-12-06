@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dr_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sel_menu_title"
+        style="@style/dialog_title_style"/>
+    
+    <View
+        android:id="@+id/sel_menu_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"/>
+ 	
+    <ListView
+        android:id="@+id/sel_menu_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_select_menu_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_button_height"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_exit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/dr_dialog_leftbutton"
+            android:text="@string/exit"
+            android:textSize="@dimen/button_text_size"
+            android:textColor="@color/text_color"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/item_divider_color" />
+
+        <Button
+            android:id="@+id/dialog_goto"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/dr_dialog_rightbutton"
+            android:text="@string/let_goto"
+            android:textSize="@dimen/button_text_size"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_cancel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dialog_button_height"
+        android:layout_weight="1"
+        android:background="@drawable/dr_dialog_confirmbutton"
+        android:text="@string/cancel"
+        android:textSize="@dimen/button_text_size"
+        android:visibility="gone"
+        android:textColor="@color/text_color"/>
+</LinearLayout>

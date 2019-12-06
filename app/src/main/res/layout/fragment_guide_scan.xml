@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context=".fragment.GuideSetMemberFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:text="@string/guide_scan_device"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/title_text_size" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/guide_scaning_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/guide_scan_waiting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/anim_loading" />
+
+            <TextView
+                android:id="@+id/device_status_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_tip1"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_tip2"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/try_again_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:text="@string/scan_tip_err"/>
+
+            <Button
+                android:id="@+id/guide_scan_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/button_style"
+                android:text="@string/scan_again"
+                android:layout_marginTop="32dp"/>
+
+            <Button
+                android:id="@+id/guide_next_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/button_style"
+                android:text="@string/next_time"
+                android:layout_marginTop="32dp"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/guide_scan_device_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#316189"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

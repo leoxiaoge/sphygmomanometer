@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        style="@style/title_style">
+
+        <ImageButton
+            android:id="@+id/member_info_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:id="@+id/member_info_title"
+            style="@style/title_text_style"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guide_member_title"
+        android:background="#FFFFFF"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                style="@style/text_style" />
+
+            <EditText
+                android:id="@+id/member_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:background="#00000000"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                style="@style/text_style"/>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_divider_color" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age"
+                style="@style/text_style" />
+
+            <EditText
+                android:id="@+id/member_age"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:background="#00000000"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                style="@style/text_style" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_divider_color" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex"
+                style="@style/text_style" />
+
+            <RadioGroup
+                android:id="@+id/sex_group"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/select_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/dr_blue_radiobutton"
+                    android:text="@string/man"
+                    style="@style/text_style" />
+
+                <RadioButton
+                    android:id="@+id/select_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:button="@drawable/dr_blue_radiobutton"
+                    android:text="@string/woman"
+                    style="@style/text_style" />
+
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/member_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/button_style"
+        android:text="@string/save"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

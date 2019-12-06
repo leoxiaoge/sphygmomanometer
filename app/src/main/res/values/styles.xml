@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- 主题样式 -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/theme_color</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="Theme.XDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 弹出框动画 -->
+    <style name="dialog_anim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- 默认字体样式 -->
+    <style name="text_style">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <!-- tab 导航样式 -->
+    <style name="tab_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textColor">@drawable/tab_txt_status</item>
+    </style>
+
+    <!-- 选择列表项样式 -->
+    <style name="item_text_style" parent="text_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/transparent_layout_bg</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <!-- 我的列表项目样式 -->
+    <style name="setting_item_text_style" parent="item_text_style">
+        <item name="android:drawableRight">@mipmap/ic_go</item>
+    </style>
+
+    <!-- 默认按钮样式 -->
+    <style name="button_style">
+        <item name="android:background">@drawable/transparent_button_bg</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 对话框标题栏样式 -->
+    <style name="dialog_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dialog_title_height</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">@dimen/dialog_title_text_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 标题栏样式 -->
+    <style name="title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:background">@color/theme_color</item>
+    </style>
+
+    <!-- 标题样式 -->
+    <style name="title_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- 标题栏图标按钮样式 -->
+    <style name="title_bar_button_style">
+        <item name="android:layout_width">@dimen/title_height</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:background">@drawable/transparent_imagebutton_bg</item>
+
+    </style>
+</resources>
