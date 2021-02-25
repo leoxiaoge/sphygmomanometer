@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib_plugin/lib_plugin.iml" filepath="$PROJECT_DIR$/lib_plugin/lib_plugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/simplemvc/simplemvc.iml" filepath="$PROJECT_DIR$/simplemvc/simplemvc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sx_portal.iml" filepath="$PROJECT_DIR$/sx_portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sphygmomanometer.iml" filepath="$PROJECT_DIR$/sphygmomanometer.iml" />
     </modules>
   </component>
 </project>
